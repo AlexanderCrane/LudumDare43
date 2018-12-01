@@ -75,27 +75,27 @@ public class MinionManager : MonoBehaviour
 
             if (i == 0)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(2);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(1);
             }
             else if (i == 1)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(3);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(2);
             }
             else if (i == 2)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(4);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(3);
             }
             else if (i == 3)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(5);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(4);
             }
             else if (i == 4)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(6);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(5);
             }
             else if (i == 5)
             {
-                minionRef.GetComponent<MinionController>().setDesiredDistance(7);
+                minionRef.GetComponent<MinionController>().setDesiredDistance(6);
             }
             else
             {

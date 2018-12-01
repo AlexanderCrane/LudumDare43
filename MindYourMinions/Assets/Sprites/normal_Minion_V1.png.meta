@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: cfa9b0c01c1eb7e4f93eb27606a23343
+guid: ad60143986f943e4ea257f186ee8a64e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: normal_Minion_V1_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -126,11 +127,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: normal_Minion_V1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0974bb1325abad242bcc5b9125f6b292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3feb75e0ee7319840aef580850caa7a5
+    spriteID: 0c0cf04c77aec5e46b8725e791514f09
     vertices: []
     indices: 
     edges: []
