@@ -1,0 +1,116 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+
+public class MinionManager : MonoBehaviour
+{
+
+    //Array approach
+    //~~~~~~~~~~~~~~~~~~~~~~~~
+    /*public GameObject[] minionArray;
+
+    public GameObject minion1;
+    public GameObject minion2;
+    public GameObject minion3;
+    public GameObject minion4;
+    public GameObject minion5;*/
+    //~~~~~~~~~~~~~~~~~~~~~~~~
+
+    //List approach
+    //~~~~~~~~~~~~~~~~~~~~~~~~
+    public Queue<GameObject> minionQueue;
+
+    GameObject minionRef;
+
+
+    //~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // Use this for initialization
+    void Start()
+    {
+        //minionArray = new GameObject[5]; //initialize the gameobject array to size 5
+
+        minionQueue = new Queue<GameObject>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void addMinion(GameObject min)
+    {
+        if (minionQueue.Count < 5)
+        {
+            minionQueue.Enqueue(min);
+
+            setDistances();
+
+            Debug.Log("Minion added to queue");
+
+        }
+        else
+        {
+            Debug.Log("Too many minions!");
+        }
+    }
+
+    public GameObject removeFrontMinion() //removes and returns minion
+    {
+        return minionQueue.Dequeue();
+
+        //later need to setDistances
+    }
+
+    public void setDistances()
+    {
+        for (int i = 0; i < minionQueue.Count; i++)
+        {
+            minionRef = minionQueue.ElementAt<GameObject>(i);
+
+            if (i == 0)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(2);
+            }
+            else if (i == 1)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(3);
+            }
+            else if (i == 2)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(4);
+            }
+            else if (i == 3)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(5);
+            }
+            else if (i == 4)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(6);
+            }
+            else if (i == 5)
+            {
+                minionRef.GetComponent<MinionController>().setDesiredDistance(7);
+            }
+            else
+            {
+                Debug.Log("ERROR: too many items in queue");
+            }
+        }
+
+    }
+
+    public void reverseDistances()
+    {
+        for (int i = 0; i < minionQueue.Count; i++)
+        {
+            minionRef = minionQueue.ElementAt<GameObject>(i);
+
+            minionRef.GetComponent<MinionController>().setDesiredDistance(minionRef.GetComponent<MinionController>().desiredDistance * -1);
+
+            //minionRef.GetComponent<MinionController>().moveSpeed *= -1;
+        }
+    }
+}

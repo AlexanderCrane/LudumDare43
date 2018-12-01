@@ -8,11 +8,15 @@ public class PlayerController : MonoBehaviour {
     public bool jump = false;
     float moveForce = 100f;
     float maxSpeed = 3f;
-    float jumpForce = 1000f;
+    float jumpForce = 2000f;
     public Transform groundCheck;
     public bool grounded = false;
+    public MinionManager mm;
+
     //private Animator anim;
     private Rigidbody2D rb2d;
+
+
 
 
     // Use this for initialization
@@ -20,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     {
         //anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        mm = GetComponent<MinionManager>();
     }
 
     // Update is called once per frame
@@ -27,10 +32,19 @@ public class PlayerController : MonoBehaviour {
     {
         //grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetKeyDown("up") || Input.GetKeyDown("w") && grounded)
         {
             jump = true;
         }
+
+        if (Input.GetKeyDown("space"))
+        {
+            //print("space key was pressed");
+            launchMinion();
+        }
+
+
+
     }
 
     void FixedUpdate()
@@ -73,6 +87,17 @@ public class PlayerController : MonoBehaviour {
         {
             Debug.Log("End goal reached!");
 
+        }
+        else if(collision.gameObject.tag == "Minion")
+        {
+            if(collision.gameObject.GetComponent<MinionController>().isPickup)
+            {
+                mm.addMinion(collision.gameObject);
+
+                collision.gameObject.GetComponent<MinionController>().isPickup = false;
+
+                collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
+            }
         }
         else if (collision.gameObject.tag == "Deadly")
         {
@@ -125,13 +150,31 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-
-
     void Flip()
     {
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+
+        mm.reverseDistances();
+    }
+
+    void launchMinion()
+    {
+        if (mm.minionQueue.Count != 0)
+        {
+            GameObject minionToLaunch = mm.removeFrontMinion();
+            minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+
+            if (facingRight)
+            {
+                minionToLaunch.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 5);
+            }
+            else
+            {
+                minionToLaunch.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 5);
+            }
+        }
     }
 }
