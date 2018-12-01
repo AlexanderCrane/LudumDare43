@@ -17,6 +17,8 @@ public class MinionController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        player = GameObject.FindWithTag("Player");
+
         GetComponent<Rigidbody2D>().gravityScale = 0;
 		
 	}

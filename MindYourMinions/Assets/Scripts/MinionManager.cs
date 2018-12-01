@@ -23,6 +23,7 @@ public class MinionManager : MonoBehaviour
 
     GameObject minionRef;
 
+    GameObject player;
 
     //~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -32,6 +33,8 @@ public class MinionManager : MonoBehaviour
         //minionArray = new GameObject[5]; //initialize the gameobject array to size 5
 
         minionQueue = new Queue<GameObject>();
+
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -104,6 +107,7 @@ public class MinionManager : MonoBehaviour
 
     public void reverseDistances()
     {
+        //if((player.GetComponent<PlayerController>().facingRight && ))
         for (int i = 0; i < minionQueue.Count; i++)
         {
             minionRef = minionQueue.ElementAt<GameObject>(i);
@@ -111,6 +115,16 @@ public class MinionManager : MonoBehaviour
             minionRef.GetComponent<MinionController>().setDesiredDistance(minionRef.GetComponent<MinionController>().desiredDistance * -1);
 
             //minionRef.GetComponent<MinionController>().moveSpeed *= -1;
+        }
+    }
+
+    public void jumpAllMinions()
+    {
+        for (int i = 0; i < minionQueue.Count; i++)
+        {
+            minionRef = minionQueue.ElementAt<GameObject>(i);
+
+            minionRef.transform.position = player.transform.position;
         }
     }
 }

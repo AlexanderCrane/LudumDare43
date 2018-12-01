@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour {
         {
             //anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
+            mm.jumpAllMinions();
+
             jump = false;
         }
     }
@@ -175,6 +177,8 @@ public class PlayerController : MonoBehaviour {
             {
                 minionToLaunch.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 5);
             }
+
+            mm.setDistances();
         }
     }
 }
