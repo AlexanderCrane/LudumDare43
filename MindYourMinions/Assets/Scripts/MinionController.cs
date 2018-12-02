@@ -6,6 +6,8 @@ public class MinionController : MonoBehaviour {
 
     public GameObject player;
 
+    public GameObject spawner;
+
     public float desiredDistance = 2f;
 
     public float moveSpeed = 5f;
@@ -20,8 +22,25 @@ public class MinionController : MonoBehaviour {
         player = GameObject.FindWithTag("Player");
 
         GetComponent<Rigidbody2D>().gravityScale = 0;
-		
-	}
+
+        if(gameObject.tag == "FireMinion")
+        {
+            spawner = GameObject.FindWithTag("FireSpawner"); //currently only allows for one copy of each type of spawner in a given level
+        }
+        else if(gameObject.tag == "WaterMinion")
+        {
+            spawner = GameObject.FindWithTag("FireSpawner");
+        }
+        else if(gameObject.tag == "BombMinion")
+        {
+            spawner = GameObject.FindWithTag("FireSpawner");
+        }
+        else if(gameObject.tag == "Minion")
+        {
+            spawner = GameObject.FindWithTag("FireSpawner");
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

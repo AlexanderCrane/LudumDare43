@@ -13,6 +13,11 @@ TagManager:
   - NormalMinion
   - Obstacle
   - ScoreText
+  - EndGoal
+  - FireSpawner
+  - WaterSpawner
+  - BombSpawner
+  - RegularSpawner
   layers:
   - Default
   - TransparentFX
