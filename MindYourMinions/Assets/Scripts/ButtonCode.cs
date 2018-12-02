@@ -14,7 +14,7 @@ void Awake()
 }
 // Update is called once per frame
 void Update () {
-   if (Rampismoving == true && Ramp.transform.position.y>=-11)
+   if (Rampismoving == true && Ramp.transform.position.y >= -2)
         {
             Ramp.transform.position = new Vector2(Ramp.transform.position.x, Ramp.transform.position.y - 0.1f);
         }

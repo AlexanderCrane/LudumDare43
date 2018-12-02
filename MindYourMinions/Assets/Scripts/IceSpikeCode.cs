@@ -8,15 +8,16 @@ public class IceSpikeCode : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDamaged == true)
+        /*if (isDamaged == true)
         {
             Destroy(this.gameObject);
-        }
+        }*/
     }
 
 
@@ -24,7 +25,13 @@ public class IceSpikeCode : MonoBehaviour
     {
         if (Other.gameObject.tag == "FireMinion")
         {
-            isDamaged = true;
+            //isDamaged = true;
+            GameObject fireMin = Other.gameObject;
+            if (fireMin.GetComponent<MinionController>().isLaunched)
+            {
+                Destroy(this.gameObject);
+            }
+
         }
     }
 }

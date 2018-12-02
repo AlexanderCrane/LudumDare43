@@ -11,6 +11,8 @@ TagManager:
   - WaterMinion
   - BombMinion
   - NormalMinion
+  - Obstacle
+  - ScoreText
   layers:
   - Default
   - TransparentFX

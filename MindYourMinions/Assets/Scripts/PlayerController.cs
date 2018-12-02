@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -13,10 +14,11 @@ public class PlayerController : MonoBehaviour {
     public bool grounded = false;
     public MinionManager mm;
 
+    public GameObject textObj;
+    public Text textComp;
+
     //private Animator anim;
     private Rigidbody2D rb2d;
-
-
 
 
     // Use this for initialization
@@ -25,6 +27,9 @@ public class PlayerController : MonoBehaviour {
         //anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         mm = GetComponent<MinionManager>();
+
+        textObj = GameObject.FindWithTag("ScoreText");
+        textComp = textObj.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -89,21 +94,24 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("End goal reached!");
 
         }
-        else if(collision.gameObject.tag == "Minion")
+        else if(collision.gameObject.tag == "Minion" || collision.gameObject.tag == "FireMinion" || collision.gameObject.tag == "BombMinion" || collision.gameObject.tag == "WaterMinion")
         {
             if(collision.gameObject.GetComponent<MinionController>().isPickup)
             {
                 mm.addMinion(collision.gameObject);
+
+                textComp.text = "Lives: " + mm.minionQueue.Count;
 
                 collision.gameObject.GetComponent<MinionController>().isPickup = false;
 
                 collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
             }
         }
-        else if (collision.gameObject.tag == "Deadly")
+        else if (collision.gameObject.tag == "Obstacle")
         {
             //Destroy(gameObject);
             //Destroy(this);
+            Application.Quit();
         }
         else if (collision.gameObject.tag == "Ground" && grounded == false)
         {
@@ -116,6 +124,8 @@ public class PlayerController : MonoBehaviour {
             //}
 
             grounded = true;
+            mm.setDistances();
+
             mm.jumpAllMinions();
 
             Debug.Log("Grounded");
@@ -160,7 +170,10 @@ public class PlayerController : MonoBehaviour {
         theScale.x *= -1;
         transform.localScale = theScale;
 
+        mm.setDistances();
+
         mm.reverseDistances();
+
     }
 
     void launchMinion()
@@ -181,6 +194,9 @@ public class PlayerController : MonoBehaviour {
             }
 
             mm.setDistances();
+
+            textComp.text = "Lives: " + mm.minionQueue.Count;
+
         }
     }
 }

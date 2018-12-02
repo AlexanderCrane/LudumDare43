@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CelingSpikesCode : MonoBehaviour
 {
-    bool isUnder;
+    bool moveSpikes;
     Vector2 startposition;
     Vector2 moveposition;
     bool isDamaged;
@@ -14,32 +14,33 @@ public class CelingSpikesCode : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         startposition = transform.position;
-        moveposition = new Vector2(startposition.x, startposition.y - 0.1f);
+        moveposition = new Vector2(startposition.x, startposition.y - 2.7f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDamaged == true)
-        {
-            Destroy(this.gameObject);
-        }
-        else if (isUnder == true && transform.position.y >= moveposition.y)
+        if(moveSpikes == true && transform.position.y >= moveposition.y)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.1f);
+
+            if(transform.position.y <= moveposition.y)
+            {
+                moveSpikes = false;
+            }
         }
-        else if (isUnder == false && transform.position.y < startposition.y)
+        else if (transform.position.y <= startposition.y)
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y - 0.1f);
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
         }
     }
 
 
-    private void OnCollisionEnter2D(Collider2D Other)
+    private void OnCollisionEnter2D(Collision2D Other)
     {
         if (Other.gameObject.tag == "BombMinion")
         {
-            isDamaged = true;
+            Destroy(this.gameObject);
         }
     }
 
@@ -47,7 +48,7 @@ public class CelingSpikesCode : MonoBehaviour
     {
         if (Other.gameObject.tag == "Player" || Other.gameObject.tag == "BombMinion"|| Other.gameObject.tag == "FireMinion" || Other.gameObject.tag == "WaterMinion" || Other.gameObject.tag == "HeavyMinion" || Other.gameObject.tag == "NormalMinion" || Other.gameObject.tag == "Minion")
         {
-            isUnder = true;
+            moveSpikes = true;
         }
     }
 }

@@ -52,11 +52,11 @@ public class MinionController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Minion" && !isPickup)
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Minion" || collision.gameObject.tag == "FireMinion" || collision.gameObject.tag == "BombMinion" || collision.gameObject.tag == "WaterMinion" && !isPickup)
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
-        if(collision.gameObject.tag == "Ground" && isLaunched)
+        if((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Obstacle") && isLaunched)
         {
             Destroy(this.gameObject);
         }

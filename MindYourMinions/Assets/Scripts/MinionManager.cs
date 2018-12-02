@@ -51,6 +51,15 @@ public class MinionManager : MonoBehaviour
 
             setDistances();
 
+            /*if(player.GetComponent<PlayerController>().facingRight)
+            {
+                reverseDistances();
+            }
+            else
+            {
+                setDistances();
+            }*/
+
             Debug.Log("Minion added to queue");
 
         }
@@ -107,6 +116,8 @@ public class MinionManager : MonoBehaviour
 
     public void reverseDistances()
     {
+        Debug.Log("Reverse distances");
+
         //if((player.GetComponent<PlayerController>().facingRight && ))
         for (int i = 0; i < minionQueue.Count; i++)
         {
