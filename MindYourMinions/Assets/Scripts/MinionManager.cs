@@ -72,8 +72,6 @@ public class MinionManager : MonoBehaviour
     public GameObject removeFrontMinion() //removes and returns minion
     {
         return minionQueue.Dequeue();
-
-        //later need to setDistances
     }
 
     public void setDistances()

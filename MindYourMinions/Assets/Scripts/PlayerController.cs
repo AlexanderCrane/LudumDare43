@@ -7,16 +7,16 @@ public class PlayerController : MonoBehaviour {
 
     public bool facingRight = true;
     public bool jump = false;
-    float moveForce = 100f;
-    float maxSpeed = 3f;
-    float jumpForce = 2000f;
-    public Transform groundCheck;
     public bool grounded = false;
+    public Transform groundCheck;
     public MinionManager mm;
-
     public GameObject textObj;
     public Text textComp;
 
+    bool isBounced;
+    float moveForce = 100f;
+    float maxSpeed = 3f;
+    float jumpForce = 2000f;
     //private Animator anim;
     private Rigidbody2D rb2d;
 
@@ -58,12 +58,12 @@ public class PlayerController : MonoBehaviour {
         //Debug.Log(h);
         //anim.SetFloat("Speed", Mathf.Abs(h));
 
-        if (h * rb2d.velocity.x < maxSpeed)
+        if (h * rb2d.velocity.x < maxSpeed && !isBounced)
         {
             rb2d.AddForce(Vector2.right * h * moveForce);
         }
 
-        if (Mathf.Abs(rb2d.velocity.x) > maxSpeed)
+        if (Mathf.Abs(rb2d.velocity.x) > maxSpeed && !isBounced)
         {
             rb2d.velocity = new Vector2(Mathf.Sign(rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
         }
@@ -111,6 +111,32 @@ public class PlayerController : MonoBehaviour {
         {
             //Destroy(gameObject);
             //Destroy(this);
+            //GameObject minionToLaunch = mm.removeFrontMinion();
+            //mm.setDistances();
+
+            //Vector3 dir = (collision.transform.position - transform.position).normalized;
+            //Debug.DrawLine(collision.transform.position, transform.position * 100);
+            GameObject minionToLaunch = mm.removeFrontMinion();
+            minionToLaunch.transform.position = transform.position + new Vector3(0, 0.3f,0);
+            minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+
+
+            if (facingRight)
+            {
+                rb2d.velocity = new Vector2(-5, 5);
+                isBounced = true;
+            }
+            else
+            {
+                rb2d.velocity = new Vector2(5, 5);
+                isBounced = true;
+            }
+            //rb2d.AddForce(new Vector2(0f, jumpForce));
+
+
+
+
+
             Application.Quit();
         }
         else if (collision.gameObject.tag == "Ground" && grounded == false)
@@ -124,6 +150,7 @@ public class PlayerController : MonoBehaviour {
             //}
 
             grounded = true;
+            isBounced = false;
             mm.setDistances();
 
             mm.jumpAllMinions();

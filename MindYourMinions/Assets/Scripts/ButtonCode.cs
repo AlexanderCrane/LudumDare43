@@ -7,14 +7,21 @@ public class ButtonCode : MonoBehaviour {
 	// Use this for initialization
     public float moveSpeed;
     public GameObject Ramp;
+
     bool Rampismoving;
+
+    Vector2 rampStartPos;
+    Vector2 rampEndPos;
+
 void Awake()
 {
+        rampStartPos = Ramp.transform.position;
+        rampEndPos = new Vector2(Ramp.transform.position.x, Ramp.transform.position.y - 2);
 
 }
 // Update is called once per frame
 void Update () {
-   if (Rampismoving == true && Ramp.transform.position.y >= -2)
+   if (Rampismoving == true && Ramp.transform.position.y >= rampEndPos.y)
         {
             Ramp.transform.position = new Vector2(Ramp.transform.position.x, Ramp.transform.position.y - 0.1f);
         }
