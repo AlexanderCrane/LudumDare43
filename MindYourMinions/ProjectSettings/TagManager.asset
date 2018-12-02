@@ -7,6 +7,10 @@ TagManager:
   - Ground
   - Minion
   - Button
+  - FireMinion
+  - WaterMinion
+  - BombMinion
+  - NormalMinion
   layers:
   - Default
   - TransparentFX
