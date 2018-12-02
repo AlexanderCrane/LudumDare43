@@ -42,6 +42,12 @@ public class MinionController : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.transform.position.x + desiredDistance, player.transform.position.y), moveSpeed * Time.deltaTime);
         }
 
+        if (Vector2.Distance(transform.position, player.transform.position) >= 10f && !isPickup && !isLaunched)
+        {
+            transform.position = player.transform.position;
+        }
+
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
