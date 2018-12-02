@@ -21,23 +21,27 @@ public class MinionController : MonoBehaviour {
 
         player = GameObject.FindWithTag("Player");
 
-        GetComponent<Rigidbody2D>().gravityScale = 0;
+        //GetComponent<Rigidbody2D>().gravityScale = 0;
 
         if(gameObject.tag == "FireMinion")
         {
             spawner = GameObject.FindWithTag("FireSpawner"); //currently only allows for one copy of each type of spawner in a given level
+            spawner.GetComponent<Spawner>().type = "fire";
         }
         else if(gameObject.tag == "WaterMinion")
         {
-            spawner = GameObject.FindWithTag("FireSpawner");
+            spawner = GameObject.FindWithTag("WaterSpawner");
+            spawner.GetComponent<Spawner>().type = "water";
         }
         else if(gameObject.tag == "BombMinion")
         {
-            spawner = GameObject.FindWithTag("FireSpawner");
+            spawner = GameObject.FindWithTag("BombSpawner");
+            spawner.GetComponent<Spawner>().type = "bomb";
         }
         else if(gameObject.tag == "Minion")
         {
-            spawner = GameObject.FindWithTag("FireSpawner");
+            spawner = GameObject.FindWithTag("RegularSpawner");
+            spawner.GetComponent<Spawner>().type = "regular";
         }
 
     }
@@ -77,6 +81,7 @@ public class MinionController : MonoBehaviour {
         }
         if((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Obstacle") && isLaunched)
         {
+            spawner.GetComponent<Spawner>().isSpawned = false;
             Destroy(this.gameObject);
         }
     }
