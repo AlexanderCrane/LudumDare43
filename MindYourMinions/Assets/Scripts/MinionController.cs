@@ -50,6 +50,10 @@ public class MinionController : MonoBehaviour {
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
+        if(collision.gameObject.tag == "Ground" && isLaunched)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void setDesiredDistance(float d)

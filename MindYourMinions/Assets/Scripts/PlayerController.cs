@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour {
         {
             //anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
-            mm.jumpAllMinions();
 
             jump = false;
         }
@@ -106,7 +105,7 @@ public class PlayerController : MonoBehaviour {
             //Destroy(gameObject);
             //Destroy(this);
         }
-        else if (collision.gameObject.tag == "Ground")
+        else if (collision.gameObject.tag == "Ground" && grounded == false)
         {
             //dontMove = true;
             //anim.SetInteger("State", 0);
@@ -117,6 +116,8 @@ public class PlayerController : MonoBehaviour {
             //}
 
             grounded = true;
+            mm.jumpAllMinions();
+
             Debug.Log("Grounded");
         }
         else if (collision.gameObject.tag == "MovingPlatform")
@@ -167,6 +168,7 @@ public class PlayerController : MonoBehaviour {
         if (mm.minionQueue.Count != 0)
         {
             GameObject minionToLaunch = mm.removeFrontMinion();
+            minionToLaunch.transform.position = transform.position;
             minionToLaunch.GetComponent<MinionController>().isLaunched = true;
 
             if (facingRight)
