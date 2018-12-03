@@ -12,20 +12,22 @@ public class Loader : MonoBehaviour {
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Trying to press button");
+
         Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(0);
         Time.timeScale = 1;
+        Debug.Log("Trying to press button");
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
     {
         Application.Quit();
-        Time.timeScale = 1;
     }
 }

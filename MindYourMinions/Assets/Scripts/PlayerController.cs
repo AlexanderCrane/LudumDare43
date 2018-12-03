@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour {
             else
             {
                 GameOverUI.SetActive(true);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
             }
 
 
