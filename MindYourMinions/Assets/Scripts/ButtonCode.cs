@@ -29,7 +29,7 @@ void Update () {
 
    private void OnCollisionEnter2D(Collision2D Other)
 {
-    if (Other.gameObject.tag == "Minion")
+    if (Other.gameObject.tag == "RegularMinion" || Other.gameObject.tag == "Minion" || Other.gameObject.tag == "FireMinion" || Other.gameObject.tag == "BombMinion" || Other.gameObject.tag == "WaterMinion")
     {
             Rampismoving = true;
             ChangeTheDamnSprite(); // call method to change sprite
