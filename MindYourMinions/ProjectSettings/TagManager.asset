@@ -18,6 +18,7 @@ TagManager:
   - WaterSpawner
   - BombSpawner
   - RegularSpawner
+  - GameOverUI
   layers:
   - Default
   - TransparentFX
