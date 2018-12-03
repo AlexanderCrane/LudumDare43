@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour {
             rb2d.AddForce(new Vector2(0f, jumpForce));
 
             jump = false;
-            anim.SetInteger("State", 2);
+            //anim.SetInteger("State", 2);
 
             grounded = false;
 
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour {
             //anim.SetInteger("State", 0);
 
 
-            anim.SetInteger("State", 0);
+            //anim.SetInteger("State", 0);
             
 
             grounded = true;
