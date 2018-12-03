@@ -2870,7 +2870,7 @@ GameObject:
   - component: {fileID: 610368937}
   m_Layer: 0
   m_Name: platform_wood (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5517,7 +5517,7 @@ GameObject:
   - component: {fileID: 1275244345}
   m_Layer: 0
   m_Name: platform_wood
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
