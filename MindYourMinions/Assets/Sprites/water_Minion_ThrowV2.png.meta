@@ -161,7 +161,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 166
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -170,7 +170,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e605240586074e41aeab562534fee0d
+      spriteID: 53dac00e0aadd424f8ca711c8156e8b3
       vertices: []
       indices: 
       edges: []
@@ -179,10 +179,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_1
       rect:
         serializedVersion: 2
-        x: 501
-        y: 32
-        width: 158
-        height: 144
+        x: 496
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996936992fde29b43b2071a3fde59e8c
+      spriteID: 8b8394b0087678f41acc5bddec575e42
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_2
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 72
-        width: 131
-        height: 128
+        x: 992
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,7 +210,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7213ae8b9c34c62499acfa22c57ce32a
+      spriteID: ef508976fe58bef4c81c8636556d6ae2
       vertices: []
       indices: 
       edges: []
@@ -219,10 +219,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_3
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 68
-        width: 134
-        height: 132
+        x: 1488
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,7 +230,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ab1801f9dc4ea645ab91a93c626b97f
+      spriteID: 1a556e66bde67ad4b896bfba7b9f11c3
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_4
       rect:
         serializedVersion: 2
-        x: 2092
-        y: 97
-        width: 142
-        height: 134
+        x: 1984
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +250,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 865033e37186bcc48a701f91a6c07a9a
+      spriteID: 05e0abbc362a3b94d8428b2afdc8841f
       vertices: []
       indices: 
       edges: []
@@ -259,10 +259,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_5
       rect:
         serializedVersion: 2
-        x: 2649
-        y: 99
-        width: 140
-        height: 143
+        x: 2480
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,7 +270,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98709f47ee3cca44a9670ea43e3a7b75
+      spriteID: 30384f99da34f30479477a67968350c0
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_6
       rect:
         serializedVersion: 2
-        x: 3194
-        y: 93
-        width: 147
-        height: 132
+        x: 2976
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,7 +290,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74c0c75106af27043a6882fd3971a560
+      spriteID: 21f9d40e389c6624695c53168db770db
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_7
       rect:
         serializedVersion: 2
-        x: 3737
-        y: 66
-        width: 127
-        height: 133
+        x: 3472
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,7 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dce73e9ef8fa5894eb0a63ef17321b91
+      spriteID: e0c26509e2bc65545a5a842de4b859cb
       vertices: []
       indices: 
       edges: []
@@ -319,10 +319,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_8
       rect:
         serializedVersion: 2
-        x: 4259
-        y: 35
-        width: 140
-        height: 136
+        x: 3968
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,7 +330,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19cf0fc97899bd438646a840285048f
+      spriteID: 0d839dd863d09554aafad861f6ec93bd
       vertices: []
       indices: 
       edges: []
@@ -339,10 +339,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_9
       rect:
         serializedVersion: 2
-        x: 4791
-        y: 2
-        width: 156
-        height: 147
+        x: 4464
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,7 +350,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eda956a03e641e41af45a330c77a09c
+      spriteID: a5cb1ee86ec5bd44f86251e5d0d4ca53
       vertices: []
       indices: 
       edges: []
@@ -359,9 +359,9 @@ TextureImporter:
       name: water_Minion_ThrowV2_10
       rect:
         serializedVersion: 2
-        x: 5293
+        x: 4960
         y: 0
-        width: 168
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -370,7 +370,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf15f562ae0024418fcca0e5088ca0a
+      spriteID: 1151d28a39cabb841b91cd2ba349f481
       vertices: []
       indices: 
       edges: []
@@ -379,9 +379,9 @@ TextureImporter:
       name: water_Minion_ThrowV2_11
       rect:
         serializedVersion: 2
-        x: 5807
+        x: 5456
         y: 0
-        width: 140
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -390,7 +390,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42f9f26882d5c3040a9da628a470a919
+      spriteID: 60a0aed6531734b46953ec80331d16da
       vertices: []
       indices: 
       edges: []
@@ -399,9 +399,9 @@ TextureImporter:
       name: water_Minion_ThrowV2_12
       rect:
         serializedVersion: 2
-        x: 6285
+        x: 5952
         y: 0
-        width: 152
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -410,7 +410,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d90ed7817632597448fbbc79395b6491
+      spriteID: debca86260869b549b7922f85325597d
       vertices: []
       indices: 
       edges: []
@@ -419,10 +419,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_13
       rect:
         serializedVersion: 2
-        x: 7837
-        y: 85
-        width: 21
-        height: 12
+        x: 6448
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,7 +430,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34fbf7fb9bd5d4e4a83ecb4ebcfa0c39
+      spriteID: dfcafbe06e2fdce4ba92f489f52f71de
       vertices: []
       indices: 
       edges: []
@@ -439,10 +439,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_14
       rect:
         serializedVersion: 2
-        x: 8268
-        y: 66
-        width: 32
-        height: 23
+        x: 6944
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,7 +450,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449f423f756560643942eefb12b4910f
+      spriteID: 1d3c4085684ff60439827794c229ed2c
       vertices: []
       indices: 
       edges: []
@@ -459,10 +459,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_15
       rect:
         serializedVersion: 2
-        x: 8335
-        y: 85
-        width: 12
-        height: 12
+        x: 7440
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,7 +470,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf6bf84eee0a134c9cd4b714cf5cff7
+      spriteID: d42cb5c2746b7bc4783e6342f10ba885
       vertices: []
       indices: 
       edges: []
@@ -479,10 +479,10 @@ TextureImporter:
       name: water_Minion_ThrowV2_16
       rect:
         serializedVersion: 2
-        x: 6768
+        x: 7936
         y: 0
-        width: 163
-        height: 84
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,227 +490,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82aae7e2d59a9a646baf5b54593b7f01
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_17
-      rect:
-        serializedVersion: 2
-        x: 7240
-        y: 31
-        width: 124
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd7a1b6de68521e41ad400c5c43944bf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_18
-      rect:
-        serializedVersion: 2
-        x: 7360
-        y: 31
-        width: 78
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 478e01d03248d204e9ad6ab4c04fd39a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_19
-      rect:
-        serializedVersion: 2
-        x: 7726
-        y: 48
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb472c21cf08dd34a82550e838aaf1dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_20
-      rect:
-        serializedVersion: 2
-        x: 7846
-        y: 69
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32398283ddaf38249acab371616fd3ef
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_21
-      rect:
-        serializedVersion: 2
-        x: 7874
-        y: 33
-        width: 62
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41fc0c3f26cd37e47b9efd7cb247098a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_22
-      rect:
-        serializedVersion: 2
-        x: 8212
-        y: 48
-        width: 53
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd2bccdd5b5fd264c8fffa82c1501794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_23
-      rect:
-        serializedVersion: 2
-        x: 8382
-        y: 60
-        width: 31
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86027c1e424401244a87fbf20c17e91d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_24
-      rect:
-        serializedVersion: 2
-        x: 8413
-        y: 31
-        width: 19
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1dbb11ee15aa3f44a820471ce9eee54
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_25
-      rect:
-        serializedVersion: 2
-        x: 7327
-        y: 7
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b4e2c0678f916241b72067674f6ca66
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_26
-      rect:
-        serializedVersion: 2
-        x: 7821
-        y: 7
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b9fd050f07cca54f8f0f67462dec3c8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_Minion_ThrowV2_27
-      rect:
-        serializedVersion: 2
-        x: 8319
-        y: 7
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0454c679544ff5640aff0a09dcdb4eeb
+      spriteID: 3b434ae688c8c7d46a48da7f1fceca1e
       vertices: []
       indices: 
       edges: []

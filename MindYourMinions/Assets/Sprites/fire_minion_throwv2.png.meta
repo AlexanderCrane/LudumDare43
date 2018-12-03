@@ -147,7 +147,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 141
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,7 +156,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39864b478d06f4f4e83ef6916a6d3f16
+      spriteID: bbf57947d6d9987409ca4269b050febc
       vertices: []
       indices: 
       edges: []
@@ -165,10 +165,10 @@ TextureImporter:
       name: fire_minion_throwv2_1
       rect:
         serializedVersion: 2
-        x: 539
-        y: 53
-        width: 161
-        height: 166
+        x: 496
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,7 +176,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96bf084d18c72524298442eda41427fa
+      spriteID: 24b5b8cfb041dd14699dd522403c8658
       vertices: []
       indices: 
       edges: []
@@ -185,9 +185,9 @@ TextureImporter:
       name: fire_minion_throwv2_2
       rect:
         serializedVersion: 2
-        x: 1064
+        x: 992
         y: 0
-        width: 170
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b03d51d93a8e2148a88c237f11a0e48
+      spriteID: 326c0ad835d8cf8428bbba0ba0b03083
       vertices: []
       indices: 
       edges: []
@@ -205,9 +205,9 @@ TextureImporter:
       name: fire_minion_throwv2_3
       rect:
         serializedVersion: 2
-        x: 1622
+        x: 1488
         y: 0
-        width: 166
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,7 +216,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66b5c044f95a2aa4b8a34dfcc67c0d36
+      spriteID: ad6d5c36a6908ef46abceb1aad3849a8
       vertices: []
       indices: 
       edges: []
@@ -225,9 +225,9 @@ TextureImporter:
       name: fire_minion_throwv2_4
       rect:
         serializedVersion: 2
-        x: 2189
+        x: 1984
         y: 0
-        width: 169
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,7 +236,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201ed1ffcedd4be4a92b36d6d1140cbd
+      spriteID: 7ad7952f86762024d97b0e82c05fcd3e
       vertices: []
       indices: 
       edges: []
@@ -245,10 +245,10 @@ TextureImporter:
       name: fire_minion_throwv2_5
       rect:
         serializedVersion: 2
-        x: 2745
-        y: 82
-        width: 179
-        height: 133
+        x: 2480
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,7 +256,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa9a41530f049c479b777968d11848d
+      spriteID: 91b01c13db59c3c40bee6e4bac01f551
       vertices: []
       indices: 
       edges: []
@@ -265,10 +265,10 @@ TextureImporter:
       name: fire_minion_throwv2_6
       rect:
         serializedVersion: 2
-        x: 3278
-        y: 49
-        width: 145
-        height: 136
+        x: 2976
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +276,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cc8d6bba464d644d9a069d7775ac4f3
+      spriteID: eef630d07fb1aba48b20c141638a7fb7
       vertices: []
       indices: 
       edges: []
@@ -285,10 +285,10 @@ TextureImporter:
       name: fire_minion_throwv2_7
       rect:
         serializedVersion: 2
-        x: 3803
-        y: 32
-        width: 140
-        height: 126
+        x: 3472
+        y: 0
+        width: 496
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,7 +296,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d5389651e244f14a8fd38caaa4d0990
+      spriteID: 44973bb3e49d62c4b992c53c5226f528
       vertices: []
       indices: 
       edges: []
@@ -305,9 +305,9 @@ TextureImporter:
       name: fire_minion_throwv2_8
       rect:
         serializedVersion: 2
-        x: 4312
+        x: 3968
         y: 0
-        width: 148
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -316,7 +316,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1689ed0dc0b45e0448ba4bcf1777e45b
+      spriteID: 7569cc6cf63838b48836fceef570d41a
       vertices: []
       indices: 
       edges: []
@@ -325,9 +325,9 @@ TextureImporter:
       name: fire_minion_throwv2_9
       rect:
         serializedVersion: 2
-        x: 4823
+        x: 4464
         y: 0
-        width: 129
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -336,7 +336,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302b34a4ecdcca249862890fea50ffb0
+      spriteID: 6de38c940df8dc548814ce3a7dede46f
       vertices: []
       indices: 
       edges: []
@@ -345,9 +345,9 @@ TextureImporter:
       name: fire_minion_throwv2_10
       rect:
         serializedVersion: 2
-        x: 5349
+        x: 4960
         y: 0
-        width: 105
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -356,7 +356,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54425594d9578ec499221d13ce2c2326
+      spriteID: 36e92129dabddbb49b9d5f7709a085a0
       vertices: []
       indices: 
       edges: []
@@ -365,9 +365,9 @@ TextureImporter:
       name: fire_minion_throwv2_11
       rect:
         serializedVersion: 2
-        x: 5840
+        x: 5456
         y: 0
-        width: 109
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -376,7 +376,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 743de190e099fff42ae975aa9b6c96d2
+      spriteID: bab57b3605a06b34e8cbf33f30977920
       vertices: []
       indices: 
       edges: []
@@ -385,9 +385,9 @@ TextureImporter:
       name: fire_minion_throwv2_12
       rect:
         serializedVersion: 2
-        x: 6342
+        x: 5952
         y: 0
-        width: 102
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -396,7 +396,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99e821655af5b1340a5bba24d96046ad
+      spriteID: 8d2c65fb683e13945bc4d83d6eaf145d
       vertices: []
       indices: 
       edges: []
@@ -405,9 +405,9 @@ TextureImporter:
       name: fire_minion_throwv2_13
       rect:
         serializedVersion: 2
-        x: 6855
+        x: 6448
         y: 0
-        width: 89
+        width: 496
         height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -416,7 +416,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2054b00cd0ff50749b51778de29811c5
+      spriteID: 9252518c9899699438a0d5ee68252b19
       vertices: []
       indices: 
       edges: []

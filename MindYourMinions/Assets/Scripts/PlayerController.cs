@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
 
     public DoorCode endGoal;
 
+    Animator anim;
     bool isBounced;
     float moveForce = 100f;
     float maxSpeed = 3f;
@@ -40,6 +41,9 @@ public class PlayerController : MonoBehaviour {
 
         YouWinUI = GameObject.FindWithTag("YouWinUI");
         YouWinUI.SetActive(false);
+
+        anim = GetComponent<Animator>();
+
 
     }
 
@@ -94,6 +98,8 @@ public class PlayerController : MonoBehaviour {
             rb2d.AddForce(new Vector2(0f, jumpForce));
 
             jump = false;
+            anim.SetInteger("State", 2);
+
             grounded = false;
 
         }
@@ -170,10 +176,9 @@ public class PlayerController : MonoBehaviour {
             //dontMove = true;
             //anim.SetInteger("State", 0);
 
-            //if (dontMove)
-            //{
-            //    anim.SetInteger("State", 2);
-            //}
+
+            anim.SetInteger("State", 0);
+            
 
             grounded = true;
             isBounced = false;
