@@ -8,15 +8,16 @@ public class FireBallCode : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDamaged == true)
+        /*if (isDamaged == true)
         {
             Destroy(this.gameObject);
-        }
+        }*/
     }
 
 
@@ -24,7 +25,7 @@ public class FireBallCode : MonoBehaviour
     {
         if (Other.gameObject.tag == "WaterMinion")
         {
-            isDamaged = true;
+            Destroy(this.gameObject);
         }
     }
 }

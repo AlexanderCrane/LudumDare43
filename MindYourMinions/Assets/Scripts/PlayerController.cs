@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public MinionManager mm;
     public GameObject textObj;
     public Text textComp;
+    public GameObject GameOverUI;
 
     bool isBounced;
     float moveForce = 100f;
@@ -30,6 +31,9 @@ public class PlayerController : MonoBehaviour {
 
         textObj = GameObject.FindWithTag("ScoreText");
         textComp = textObj.GetComponent<Text>();
+
+        GameOverUI = GameObject.FindWithTag("GameOverUI");
+        GameOverUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -116,9 +120,17 @@ public class PlayerController : MonoBehaviour {
 
             //Vector3 dir = (collision.transform.position - transform.position).normalized;
             //Debug.DrawLine(collision.transform.position, transform.position * 100);
-            GameObject minionToLaunch = mm.removeFrontMinion();
-            minionToLaunch.transform.position = transform.position + new Vector3(0, 0.3f,0);
-            minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+            if (mm.minionQueue.Count != 0)
+            {
+                GameObject minionToLaunch = mm.removeFrontMinion();
+                minionToLaunch.transform.position = transform.position + new Vector3(0, 0.3f, 0);
+                minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+            }
+            else
+            {
+                GameOverUI.SetActive(true);
+                Destroy(this.gameObject);
+            }
 
 
             if (facingRight)
