@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 601f56c9ca3585d408669444630e4871
+guid: 514c2722e95353b4a8aa0ce6e493ed91
 TextureImporter:
   fileIDToRecycleName:
-    21300000: king_Minion_Jumping_V1_0
-    21300002: king_Minion_Jumping_V1_1
-    21300004: king_Minion_Jumping_V1_2
-    21300006: king_Minion_Jumping_V1_3
-    21300008: king_Minion_Jumping_V1_4
-    21300010: king_Minion_Jumping_V1_5
-    21300012: king_Minion_Jumping_V1_6
-    21300014: king_Minion_Jumping_V1_7
-    21300016: king_Minion_Jumping_V1_8
-    21300018: king_Minion_Jumping_V1_9
+    21300000: king_minion_kick_0
+    21300002: king_minion_kick_1
+    21300004: king_minion_kick_2
+    21300006: king_minion_kick_3
+    21300008: king_minion_kick_4
+    21300010: king_minion_kick_5
+    21300012: king_minion_kick_6
+    21300014: king_minion_kick_7
+    21300016: king_minion_kick_8
+    21300018: king_minion_kick_9
+    21300020: king_minion_kick_10
+    21300022: king_minion_kick_11
+    21300024: king_minion_kick_12
+    21300026: king_minion_kick_13
+    21300028: king_minion_kick_14
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -138,7 +143,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_0
+      name: king_minion_kick_0
       rect:
         serializedVersion: 2
         x: 0
@@ -152,13 +157,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6486ab74c69352440b1cc7681ef6177a
+      spriteID: 60f59336f5f74fe498c5252f119345de
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_1
+      name: king_minion_kick_1
       rect:
         serializedVersion: 2
         x: 232
@@ -172,13 +177,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bbd5a8f3fd7b1341bb381f7528d0bd4
+      spriteID: a10df75b59974ce499ecc03b5613fbb1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_2
+      name: king_minion_kick_2
       rect:
         serializedVersion: 2
         x: 464
@@ -192,13 +197,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f92cfd3adafff52448c719d94ffc43ba
+      spriteID: a77812e97e1f45542af9dc157211dbfc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_3
+      name: king_minion_kick_3
       rect:
         serializedVersion: 2
         x: 696
@@ -212,13 +217,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeae006907b36c542ac2e23676e314cb
+      spriteID: 81b9b9b4c3d6e204aa15e9560d629895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_4
+      name: king_minion_kick_4
       rect:
         serializedVersion: 2
         x: 928
@@ -232,13 +237,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c762e2253176348895b271e265ee6a
+      spriteID: 0bdf8f1987389364ebaa6a891fdbeaf6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_5
+      name: king_minion_kick_5
       rect:
         serializedVersion: 2
         x: 1160
@@ -252,13 +257,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c72c0cd19175ea4e905d7492429cbbd
+      spriteID: 5da88b5a507881641a1e06ed4c1d562f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_6
+      name: king_minion_kick_6
       rect:
         serializedVersion: 2
         x: 1392
@@ -272,13 +277,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a190379742cb2e4585948c41ff3efb0
+      spriteID: f08b9feca70e8ef4d9a1255675d5f15c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_7
+      name: king_minion_kick_7
       rect:
         serializedVersion: 2
         x: 1624
@@ -292,13 +297,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdf0e1ca1427d64e8cafc343c4bb68f
+      spriteID: 0d21d6002470d534e9ccd15e3e8c2b4b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_8
+      name: king_minion_kick_8
       rect:
         serializedVersion: 2
         x: 1856
@@ -312,13 +317,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a9e705683eac9409bdc7ff30df61bf
+      spriteID: 73370317b2c83bc4fb067eeda8749280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_9
+      name: king_minion_kick_9
       rect:
         serializedVersion: 2
         x: 2088
@@ -332,7 +337,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df7aa9cf00bc654997c5c9befc6f82d
+      spriteID: 3feb35b37aa63644fa597e8f0d5486d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: king_minion_kick_10
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188aaed4797a53e48bed68238ffd4bda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: king_minion_kick_11
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd15ae7cf842f1e45bbe99f24c1791e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: king_minion_kick_12
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321081371b5993a44a3766abf5161599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: king_minion_kick_13
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcfa1f1b913c09499b86df419e2b69a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: king_minion_kick_14
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73625ac614cd96145b421a67c1a444ab
       vertices: []
       indices: 
       edges: []
@@ -340,7 +445,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3c8ee0baa7d5ed54e992b0f8b4c448c0
+    spriteID: fd9cc25d75334444b82c68644ee51628
     vertices: []
     indices: 
     edges: []

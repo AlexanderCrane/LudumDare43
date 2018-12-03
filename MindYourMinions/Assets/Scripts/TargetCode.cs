@@ -9,6 +9,8 @@ public class TargetCode : MonoBehaviour
     public float speed = 7.0f;
     private Vector3 startPos;
 
+    public DoorCode endDoor;
+
     void Start()
     {
         startPos = transform.position;
@@ -19,18 +21,19 @@ public class TargetCode : MonoBehaviour
         Vector3 v = startPos;
         v.x += delta * Mathf.Sin(Time.time * speed);
         transform.position = v;
-        if (isDamaged == true)
+        /*if (isDamaged == true)
         {
+            Destroy(this.gameObject);
+        }*/
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D Other)
+    {
+        if (Other.gameObject.tag == "BombMinion")
+        {
+            endDoor.doorUnlocked();
             Destroy(this.gameObject);
         }
     }
-
-
-private void OnCollisionEnter2D(Collision2D Other)
-{
-    if (Other.gameObject.tag == "BombMinion")
-    {
-        isDamaged = true;
-    }
-}
 }

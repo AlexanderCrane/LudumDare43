@@ -7,24 +7,19 @@ public class DoorCode : MonoBehaviour
 {
     // Use this for initialization
     public float moveSpeed;
-    bool Dooropen;
-    void Awake()
-    {
+    public bool Dooropen;
 
-    }
-    // Update is called once per frame
-    void Update()
+    public void doorUnlocked()
     {
-
+        Dooropen = true;
+        ChangeTheDamnSprite(); // call method to change sprite
     }
 
     private void OnCollisionEnter2D(Collision2D Other)
     {
-        if (Other.gameObject.tag == "Player")
+        if (Other.gameObject.tag == "Player" && Dooropen)
         {
-            Dooropen = true;
-            ChangeTheDamnSprite(); // call method to change sprite
-
+            //you win
         }
     }
 

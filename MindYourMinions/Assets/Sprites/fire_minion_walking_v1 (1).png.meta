@@ -1,17 +1,27 @@
 fileFormatVersion: 2
-guid: 601f56c9ca3585d408669444630e4871
+guid: 9d860b3dd5452ac4eb1075610f8b6834
 TextureImporter:
   fileIDToRecycleName:
-    21300000: king_Minion_Jumping_V1_0
-    21300002: king_Minion_Jumping_V1_1
-    21300004: king_Minion_Jumping_V1_2
-    21300006: king_Minion_Jumping_V1_3
-    21300008: king_Minion_Jumping_V1_4
-    21300010: king_Minion_Jumping_V1_5
-    21300012: king_Minion_Jumping_V1_6
-    21300014: king_Minion_Jumping_V1_7
-    21300016: king_Minion_Jumping_V1_8
-    21300018: king_Minion_Jumping_V1_9
+    21300000: fire_minion_walking_v1 (1)_0
+    21300002: fire_minion_walking_v1 (1)_1
+    21300004: fire_minion_walking_v1 (1)_2
+    21300006: fire_minion_walking_v1 (1)_3
+    21300008: fire_minion_walking_v1 (1)_4
+    21300010: fire_minion_walking_v1 (1)_5
+    21300012: fire_minion_walking_v1 (1)_6
+    21300014: fire_minion_walking_v1 (1)_7
+    21300016: fire_minion_walking_v1 (1)_8
+    21300018: fire_minion_walking_v1 (1)_9
+    21300020: fire_minion_walking_v1 (1)_10
+    21300022: fire_minion_walking_v1 (1)_11
+    21300024: fire_minion_walking_v1 (1)_12
+    21300026: fire_minion_walking_v1 (1)_13
+    21300028: fire_minion_walking_v1 (1)_14
+    21300030: fire_minion_walking_v1 (1)_15
+    21300032: fire_minion_walking_v1 (1)_16
+    21300034: fire_minion_walking_v1 (1)_17
+    21300036: fire_minion_walking_v1 (1)_18
+    21300038: fire_minion_walking_v1 (1)_19
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -138,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_0
+      name: fire_minion_walking_v1 (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -152,13 +162,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6486ab74c69352440b1cc7681ef6177a
+      spriteID: 001d6480afe54944592a590e18cc857d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_1
+      name: fire_minion_walking_v1 (1)_1
       rect:
         serializedVersion: 2
         x: 232
@@ -172,13 +182,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bbd5a8f3fd7b1341bb381f7528d0bd4
+      spriteID: 90549f93349b32e42a82aff09ab93de9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_2
+      name: fire_minion_walking_v1 (1)_2
       rect:
         serializedVersion: 2
         x: 464
@@ -192,13 +202,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f92cfd3adafff52448c719d94ffc43ba
+      spriteID: b7db51dba8a380440a51bf9da2955c99
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_3
+      name: fire_minion_walking_v1 (1)_3
       rect:
         serializedVersion: 2
         x: 696
@@ -212,13 +222,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeae006907b36c542ac2e23676e314cb
+      spriteID: 28d499b92277e0441b634078b81dd03a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_4
+      name: fire_minion_walking_v1 (1)_4
       rect:
         serializedVersion: 2
         x: 928
@@ -232,13 +242,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c762e2253176348895b271e265ee6a
+      spriteID: 34fe735eee5133347b7591c59db11d8e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_5
+      name: fire_minion_walking_v1 (1)_5
       rect:
         serializedVersion: 2
         x: 1160
@@ -252,13 +262,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c72c0cd19175ea4e905d7492429cbbd
+      spriteID: a09ccde5a44e8114f8e574af715c400d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_6
+      name: fire_minion_walking_v1 (1)_6
       rect:
         serializedVersion: 2
         x: 1392
@@ -272,13 +282,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a190379742cb2e4585948c41ff3efb0
+      spriteID: b8dfb9272ef952145aa2ab9a25d94dde
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_7
+      name: fire_minion_walking_v1 (1)_7
       rect:
         serializedVersion: 2
         x: 1624
@@ -292,13 +302,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdf0e1ca1427d64e8cafc343c4bb68f
+      spriteID: 60a4e4d8de96a6c409b05b83cd02d92f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_8
+      name: fire_minion_walking_v1 (1)_8
       rect:
         serializedVersion: 2
         x: 1856
@@ -312,13 +322,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a9e705683eac9409bdc7ff30df61bf
+      spriteID: 314b396a814fd8c4ca134e706177bc75
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: king_Minion_Jumping_V1_9
+      name: fire_minion_walking_v1 (1)_9
       rect:
         serializedVersion: 2
         x: 2088
@@ -332,7 +342,207 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df7aa9cf00bc654997c5c9befc6f82d
+      spriteID: e4da0baa9e72d4b4c8f692f5dcc38e00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7408d7dac91854db26377c9d9361fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49963cf19d042374aa92497738aa4720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f864658af39fa884d8ba64632d06a8c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619bb4aea1f9ee343ae232840e4401a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546602cf0cccffb4c8b58679a84c462b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8176ba3f90744484fb2b74444343d75e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32ecaf00a7971740b2482581621ba93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 3944
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d862cfed381a424fb92d5b03cfa1e69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 4176
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b88287e26ad544d9c44551243d8aa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_minion_walking_v1 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 0
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c030fe4289268642b7c4960d8cc3516
       vertices: []
       indices: 
       edges: []
@@ -340,7 +550,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3c8ee0baa7d5ed54e992b0f8b4c448c0
+    spriteID: e16983f4b6c5ac2459aba241e2f5f9a8
     vertices: []
     indices: 
     edges: []

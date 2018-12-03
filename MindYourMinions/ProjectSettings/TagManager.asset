@@ -19,6 +19,7 @@ TagManager:
   - BombSpawner
   - RegularSpawner
   - GameOverUI
+  - YouWinUI
   layers:
   - Default
   - TransparentFX

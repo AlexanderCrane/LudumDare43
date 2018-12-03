@@ -19,6 +19,13 @@ public class Loader : MonoBehaviour {
 
     }
 
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        Debug.Log("Trying to press button");
+        SceneManager.LoadScene(0);
+    }
+
     public void LoadLevel1()
     {
         Time.timeScale = 1;

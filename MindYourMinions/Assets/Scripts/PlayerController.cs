@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour {
     public GameObject textObj;
     public Text textComp;
     public GameObject GameOverUI;
+    public GameObject YouWinUI;
+
+    public DoorCode endGoal;
 
     bool isBounced;
     float moveForce = 100f;
@@ -34,6 +37,10 @@ public class PlayerController : MonoBehaviour {
 
         GameOverUI = GameObject.FindWithTag("GameOverUI");
         GameOverUI.SetActive(false);
+
+        YouWinUI = GameObject.FindWithTag("YouWinUI");
+        YouWinUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -95,6 +102,10 @@ public class PlayerController : MonoBehaviour {
 
         if (collision.gameObject.tag == "EndGoal")
         {
+            if (endGoal.Dooropen)
+            {
+                YouWinUI.SetActive(true);
+            }
             Debug.Log("End goal reached!");
 
         }
