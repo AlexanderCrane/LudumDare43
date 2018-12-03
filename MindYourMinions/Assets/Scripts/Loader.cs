@@ -51,4 +51,6 @@ public class Loader : MonoBehaviour {
     {
         Application.Quit();
     }
+
+
 }

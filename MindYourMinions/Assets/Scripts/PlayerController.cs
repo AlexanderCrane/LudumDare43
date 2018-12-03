@@ -94,6 +94,8 @@ public class PlayerController : MonoBehaviour {
             rb2d.AddForce(new Vector2(0f, jumpForce));
 
             jump = false;
+            grounded = false;
+
         }
     }
 
@@ -104,6 +106,8 @@ public class PlayerController : MonoBehaviour {
         {
             if (endGoal.Dooropen)
             {
+                StartCoroutine(waitPls());
+
                 YouWinUI.SetActive(true);
             }
             Debug.Log("End goal reached!");
@@ -136,9 +140,14 @@ public class PlayerController : MonoBehaviour {
                 GameObject minionToLaunch = mm.removeFrontMinion();
                 minionToLaunch.transform.position = transform.position + new Vector3(0, 0.3f, 0);
                 minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+
+                textComp.text = "Lives: " + mm.minionQueue.Count;
+
             }
             else
             {
+                StartCoroutine(waitPls());
+
                 GameOverUI.SetActive(true);
                 //Destroy(this.gameObject);
             }
@@ -155,12 +164,6 @@ public class PlayerController : MonoBehaviour {
                 isBounced = true;
             }
             //rb2d.AddForce(new Vector2(0f, jumpForce));
-
-
-
-
-
-            Application.Quit();
         }
         else if (collision.gameObject.tag == "Ground" && grounded == false)
         {
@@ -249,4 +252,16 @@ public class PlayerController : MonoBehaviour {
 
         }
     }
+
+    IEnumerator waitPls()
+    {
+
+        //returning 0 will make it wait 1 frame
+        yield return 1;
+
+        //code goes here
+
+
+    }
+
 }
