@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
     {
         //grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-        if (Input.GetKeyDown("up") || Input.GetKeyDown("w") && grounded)
+        if (Input.GetKeyDown("up") || Input.GetKeyDown("w") && grounded && !jump)
         {
             jump = true;
         }
@@ -96,12 +96,10 @@ public class PlayerController : MonoBehaviour {
         {
             //anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
+            grounded = false;
 
             jump = false;
             //anim.SetInteger("State", 2);
-
-            grounded = false;
-
         }
     }
 
