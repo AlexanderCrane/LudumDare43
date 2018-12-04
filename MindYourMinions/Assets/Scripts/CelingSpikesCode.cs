@@ -20,7 +20,7 @@ public class CelingSpikesCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(moveSpikes == true && transform.position.y >= moveposition.y)
+        /*if(moveSpikes == true && transform.position.y >= moveposition.y)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.1f);
 
@@ -32,11 +32,11 @@ public class CelingSpikesCode : MonoBehaviour
         else if (transform.position.y <= startposition.y)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
-        }
+        }*/
     }
 
 
-    private void OnCollisionEnter2D(Collision2D Other)
+    /*private void OnCollisionEnter2D(Collision2D Other)
     {
         if (Other.gameObject.tag == "BombMinion")
         {
@@ -50,5 +50,5 @@ public class CelingSpikesCode : MonoBehaviour
         {
             moveSpikes = true;
         }
-    }
+    }*/
 }

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public bool facingRight = true;
     public bool jump = false;
     public bool grounded = false;
-    public Transform groundCheck;
+    //public Transform groundCheck;
     public MinionManager mm;
     public GameObject textObj;
     public Text textComp;
@@ -256,6 +256,30 @@ public class PlayerController : MonoBehaviour {
             textComp.text = "Lives: " + mm.minionQueue.Count;
 
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            if (mm.minionQueue.Count != 0)
+            {
+                GameObject minionToLaunch = mm.removeFrontMinion();
+                minionToLaunch.transform.position = transform.position + new Vector3(0, 0.3f, 0);
+                minionToLaunch.GetComponent<MinionController>().isLaunched = true;
+
+                textComp.text = "Lives: " + mm.minionQueue.Count;
+
+            }
+            else
+            {
+                StartCoroutine(waitPls());
+
+                GameOverUI.SetActive(true);
+                //Destroy(this.gameObject);
+            }
+        }
+
     }
 
     IEnumerator waitPls()
